@@ -161,6 +161,14 @@
             //better-scroll滚动
         var BScroll = new BScroll('.footer', {
 
+            })
+            //ajax请求
+        $.ajax({
+            type: 'get',
+            url: './src/data.json',
+            success: function() {
+                console.log(data)
+            }
         })
     </script>
 </body>
