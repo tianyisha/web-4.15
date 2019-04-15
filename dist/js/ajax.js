@@ -1,0 +1,1 @@
+var $={ajax:function(e){var t,s=!e.async||e.async;(t=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject).open(e.type||"get",e.url,s),t.onreadystatechange=function(){4==t.readyState&&200==t.status?e.success&&e.success(JSON.parse(this.responseText)):e.error&&e.error(this.responseText)},t.send()}};
